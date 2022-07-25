@@ -1,37 +1,85 @@
 .header {
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    margin-bottom: -15px;
-    margin-top: 0px;
-  }
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin-bottom: -15px;
+  margin-top: 0px;
+}
+
+
+.text-theme {
+  font-size: 15px;
+}
 
 .portrait {
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: 20px;
 }
   
+.youtube {
+  padding: 0px;
+  font-size: 20px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+
+}
+
+.preview-scroller {
+  padding-top: 10px;
+  display: grid;
+  gap: var(--size-3);
+  grid-auto-flow: column;
+  grid-auto-columns: 50%;
+
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  border-bottom: 1px solid black;
+}
+
+.youtube-media {
+  padding: 5px; 
+}
+
+.youtube-media > a > img {
+  inline-size: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.snaps-inline {
+  scroll-snap-type: inline mandatory;
+}
+
+.snaps-inline > * {
+  scroll-snap-align: center;
+}
+
 .nav {
   text-align: center;
-  padding: 0px;
+  padding: 5px;
   margin-top: 0px;
   margin-left: 0px;
   margin-bottom: 0px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
+
 .nav > li {
   text-align: center;
   display: inline-block;
   padding: 0px 30px;
 }
+
 .nav > li:hover {
-    text-shadow: 0px 0px 20px rgb(0, 0, 0), 0px 0px 20px rgb(0, 0, 0);;
+  text-shadow: 0px 0px 20px rgb(0, 0, 0), 0px 0px 20px rgb(0, 0, 0);;
 }
+
 .nav > li > a {
   color: white;
   text-decoration: none;
 }
 
-  body {
-    background-color: gainsboro;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
+body {
+  background-color: gainsboro;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
